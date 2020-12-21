@@ -1,5 +1,6 @@
 package com.securityTest.config;
 
+import com.securityTest.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.context.annotation.Bean;

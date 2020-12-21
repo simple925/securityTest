@@ -1,4 +1,4 @@
-package com.securityTest.config;
+package com.securityTest.reppository;
 
 import lombok.AccessLevel;
 import lombok.Builder;
