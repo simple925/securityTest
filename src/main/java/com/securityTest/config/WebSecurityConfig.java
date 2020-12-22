@@ -11,9 +11,6 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-
-import javax.validation.constraints.NotNull;
-
 @RequiredArgsConstructor
 @EnableWebSecurity
 // Spring Security 를 활성화한다는 의미의 Annotation
@@ -30,7 +27,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     // 비밀번호를 암호화할 때 사용할 인코더를 미리 빈으로 등록해 놓는 과정
 
     @Override
-    public void configure(@NotNull WebSecurity web) {
+    public void configure(WebSecurity web) {
         web.ignoring().antMatchers("/css/**", "/js/**", "/img/**");
     }
     /*
