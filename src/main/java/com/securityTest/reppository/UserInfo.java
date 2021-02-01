@@ -71,8 +71,8 @@ public class UserInfo implements UserDetails {
     @Override
     public boolean isAccountNonLocked() {
         // 계정 잠금되었는지 확인하는 로직
-//        return true; // true -> 잠금되지 않았음
-        return false; // true -> 잠금되지 않았음
+        return true; // true -> 잠금되지 않았음
+//        return false; // true -> 잠금되지 않았음
     }
 
     // 패스워드의 만료 여부 반환

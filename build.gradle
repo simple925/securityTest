@@ -33,8 +33,13 @@ dependencies {
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
+    compile('org.springframework.boot:spring-boot-starter-mustache')
+    // 서버 재시작 없이 소스코드 적용용
+    compile group: 'org.springframework.boot', name: 'spring-boot-devtools', version: '2.2.1.RELEASE'
+    // db
+    runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
 }
-
 test {
     useJUnitPlatform()
 }
+

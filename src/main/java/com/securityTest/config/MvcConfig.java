@@ -15,5 +15,8 @@ view 연결을 위해 MvcConfig class 에 WebMvcConfigurer 를 implements 해준
         registry.addViewController("/login").setViewName("login");
         registry.addViewController("/admin").setViewName("admin");
         registry.addViewController("/signup").setViewName("signup");
+        registry.addViewController("/file_upload").setViewName("file_upload");
+        registry.addViewController("/board/list").setViewName("board_list");
+        registry.addViewController("/board/post").setViewName("board_post");
     }
 }
